@@ -1,0 +1,383 @@
+customer_id,first_name,last_name,email,registration_date,country,city,customer_status
+C0001,Hannah,Schmidt,hannah.schmidt@outlook.com,2020-04-16,Schweiz,Lausanne,Active
+C0003,Sanne,Smit,sanne.smit@example.com,2022-07-17,Deutschland,Leipzig,Active
+C0006,Camille,Huber,camille.huber@web.de,2024-11-23,Deutschland,München,inactive
+C0007,Emma,De Vries,emma.devries@web.de,22.06.2023,Österreich,Wien,active
+C0008,Anna,Moser,anna.moser@web.de,07/24/2021,Schweiz,Lausanne,Active
+C0009,Daan,Hofer,daan.hofer@,09/20/2021,Italien,Neapel,active
+C0010,Alexander,Wolf,alexander.wolf@outlook.com,08/17/2020,Schweiz,Genf,Active
+C0011,Sanne,Fischer,sanne.fischer@mail.de,2024-05-19,Frankreich,Marseille,Active
+C0012,Noah,Ferrari,noah.ferrari@outlook.com,2024-07-28,Schweiz,Zürich,Active
+C0013,Nico,Dubois,nico.dubois@gmail.com,11/17/2022,Deutschland,Berlin,inactive
+C0014,Noah,Smit,noah.smit@gmail.com,2023-01-09,Niederlande,Utrecht,active
+C0016,Jan,Van de Berg,jan.vandeberg@gmail.com,2023-09-17,Deutschland,Nürnberg,ACTIVE
+C0017,Hannah,Koch,hannah.koch@mail.de,2021-03-01,Frankreich,Lyon,active
+C0018,Giulia,Lefebvre,giulia.lefebvre@gmx.net,2024-05-18,Niederlande,Utrecht,Active
+C0019,Elena,Richter,elena.richter@gmx.net,2022-08-04,Deutschland,Köln,ACTIVE
+C0020,Leon,Meijer,leon.meijer@example.com,11/04/2020,Deutschland,Hamburg,ACTIVE
+C0021,Chiara,Meijer,chiara.meijer@outlook.com,2022-10-18,Deutschland,München,ACTIVE
+C0022,Felix,Becker,felix.becker@outlook.com,2023-03-24,Österreich,Salzburg,ACTIVE
+C0023,Lotte,Münch,lotte.muench@gmx.net,05/19/2022,Deutschland,Frankfurt am Main,active
+C0024,Marco,Schäfer,marco.schaefer@outlook.com,02/23/2022,Deutschland,Stuttgart,ACTIVE
+C0026,Elias,Fischer,elias.fischer@example.com,28.08.2023,Österreich,Salzburg,active
+C0027,Tobias,Hoffmann,tobias.hoffmann@gmx.net,04/09/2021,Schweiz,Basel,ACTIVE
+C0028,Sophie,Zimmermann,sophie.zimmermann@outlook.com,2022-05-30,Deutschland,Düsseldorf,ACTIVE
+C0029,Julia,Weber,julia.weber@web.de,05/29/2023,Deutschland,Frankfurt am Main,Active
+C0030,Matteo,Müller,matteo.muellerweb.de,07/26/2021,Schweiz,Zürich,ACTIVE
+C0032,Felix,Schwarz,felix.schwarz@web.de,2020-03-21,Frankreich,Marseille,ACTIVE
+C0033,Lukas,Bauer,lukas.bauer@outlook.com,2022-02-14,Deutschland,Stuttgart,Active
+C0034,Maximilian,Van de Berg,maximilian.vandeberg@gmail.com,18.06.2022,Deutschland,Berlin,Active
+C0037,Elias,Zimmermann,elias.zimmermann@example.com,10.03.2023,Österreich,Graz,Active
+C0038,Marie,Schwarz,marie.schwarz@example.com,2020-03-12,Schweiz,Genf,Active
+C0041,Felix,Van de Berg,felix.vandeberg@gmail.com,2020-01-20,Italien,Neapel,Active
+C0042,Elias,Schröder,elias.schroeder@example.com,18.06.2023,Deutschland,Düsseldorf,ACTIVE
+C0043,Chiara,Meijer,chiara.meijer@gmx.net,20.08.2021,Deutschland,Leipzig,active
+C0044,Milan,Van de Berg,milan.vandeberg@outlook.com,2024-03-13,Deutschland,Berlin,ACTIVE
+C0045,Antoine,Smit,antoine.smit@example.com,23.01.2020,Frankreich,Toulouse,ACTIVE
+C0046,Nico,Huber,nico.huber@web.de,2020-02-23,Deutschland,Leipzig,Active
+C0050,Sophia,Jansen,sophia.jansen@mail.de,2022-01-16,Niederlande,Rotterdam,ACTIVE
+C0052,Maximilian,Smit,maximilian.smit@gmx.net,02/09/2022,Schweiz,Bern,Active
+C0053,Elias,Gruber,elias.gruber@gmx.net,2021-12-07,Österreich,Innsbruck,Inactive
+C0054,Paul,Jansen,paul.jansen@example.com,06.12.2024,Deutschland,München,ACTIVE
+C0056,Noah,Huber,noah.huber@gmail.com,12.02.2024,Österreich,Innsbruck,ACTIVE
+C0057,Julia,Moreau,julia.moreau@gmail.com,2021-08-31,Deutschland,Berlin,active
+C0058,Lukas,Neumann,lukas.neumann@gmail.com,20.06.2020,Italien,Mailand,active
+C0059,Antoine,Jansen,antoine.jansen@web.de,2022-10-18,Niederlande,Utrecht,ACTIVE
+C0060,Marie,Schwarz,marie.schwarz@gmx.net,2021-01-16,Deutschland,Frankfurt am Main,ACTIVE
+C0061,Lukas,Rossi,lukas.rossi@outlook.com,2022-10-31,Frankreich,Lyon,ACTIVE
+C0063,Sophia,Schäfer,sophia.schaefer@mail.de,2022-09-28,Schweiz,Zürich,ACTIVE
+C0064,Sarah,Moser,sarah.moser@mail.de,2021-02-09,Italien,Mailand,ACTIVE
+C0065,Manon,Schröder,manon.schroeder@example.com,2022-02-04,Schweiz,Lausanne,active
+C0067,Noah,Bernasconi,noah.bernasconi@gmx.net,2023-01-20,Italien,Palermo,ACTIVE
+C0068,Sophia,Moser,sophia.moser@web.de,2023-01-14,Deutschland,Hamburg,active
+C0069,Elias,Müller,elias.mueller@example.com,04/09/2021,Schweiz,Bern,Active
+C0070,Julia,Steiner,julia.steiner@example.com,08/21/2022,Italien,Palermo,ACTIVE
+C0072,Mia,Schröder,mia.schroeder@gmx.net,05/11/2023,Deutschland,Berlin,active
+C0073,Lukas,Moreau,lukas.moreau@gmx.net,08/11/2022,Deutschland,Stuttgart,active
+C0074,Julia,Rossi,julia.rossi@gmail.com,12.07.2020,Niederlande,Den Haag,active
+C0075,Antoine,Bakker,antoine.bakker@web.de,05/18/2021,Deutschland,Köln,ACTIVE
+C0076,Maximilian,Smit,maximilian.smit@outlook.com,2024-03-08,Österreich,Salzburg,active
+C0078,Laura,Moreau,laura.moreau@example.com,2023-11-06,Niederlande,Eindhoven,ACTIVE
+C0079,Sanne,Moreau,sanne.moreau@example.com,01.10.2023,Österreich,Graz,Inactive
+C0080,Laura,Moser,laura.moser@web.de,2022-07-28,Schweiz,Genf,Active
+C0081,David,Schäfer,david.schaefer@gmail.com,20.08.2021,Deutschland,Dresden,Inactive
+C0082,Hannah,Neumann,hannah.neumann@outlook.com,2022-10-09,Deutschland,Köln,Active
+C0085,Hannah,Richter,hannah.richter@gmx.net,2020-04-18,Frankreich,Paris,active
+C0086,Sarah,Esposito,sarah.esposito@mail.de,02/25/2023,Deutschland,Frankfurt am Main,active
+C0088,Felix,De Jong,felix.dejong@outlook.com,2020-09-29,Österreich,Linz,ACTIVE
+C0090,Chiara,Fischer,chiara.fischer@mail.de,2022-09-02,Schweiz,Basel,ACTIVE
+C0092,Alexander,Meijer,alexander.meijer@mail.de,06/25/2020,Schweiz,Zürich,Active
+C0094,Finn,Schneider,finn.schneider@gmail.com,2023-11-20,Schweiz,Bern,ACTIVE
+C0096,Jan,Van de Berg,jan.vandeberg@gmail.com,2023-12-16,Österreich,Salzburg,Active
+C0097,Marie,Koch,marie.koch@outlook.com,04/08/2023,Deutschland,Berlin,Inactive
+C0098,Sarah,Zimmermann,sarah.zimmermann@outlook.com,2020-04-03,Niederlande,Amsterdam,ACTIVE
+C0100,Sarah,Schröder,sarah.schroeder@example.com,05.08.2021,Deutschland,Stuttgart,ACTIVE
+C0102,Laura,Richter,laura.richter@gmail.com,2020-10-23,Deutschland,Stuttgart,active
+C0104,Gabriel,Schmidt,gabriel.schmidt@gmail.com,2021-12-07,Frankreich,Paris,ACTIVE
+C0105,Louis,Steiner,louis.steiner@gmail.com,2020-05-18,Niederlande,Utrecht,Active
+C0106,Manon,Schmidt,manon.schmidt@example.com,2022-12-28,Deutschland,Berlin,active
+C0108,Mia,Schulz,mia.schulz@gmail.com,12/03/2021,Deutschland,Nürnberg,active
+C0109,Giulia,Müller,giulia.mueller@gmail.com,2021-08-25,Deutschland,Frankfurt am Main,ACTIVE
+C0111,Chiara,Schmidt,chiara.schmidt@mail.de,07/26/2024,Deutschland,Stuttgart,active
+C0113,Sem,Moreau,sem.moreau@mail.de,2023-01-26,Niederlande,Utrecht,Active
+C0114,Elena,Ferrari,elena.ferrari@outlook.com,05/17/2022,Deutschland,München,ACTIVE
+C0115,Marco,Becker,marco.becker@web.de,05.10.2022,Deutschland,Hamburg,ACTIVE
+C0118,Lea,Moser,lea.moser@outlook.com,2023-01-07,Deutschland,Nürnberg,active
+C0119,Sarah,Becker,sarah.becker@example.com,2023-02-18,Österreich,Wien,Active
+C0120,Sanne,De Jong,sanne.dejong@gmx.net,10/18/2023,Österreich,Innsbruck,active
+C0121,David,Moser,david.moser@mail.de,08.01.2023,Frankreich,Lyon,ACTIVE
+C0122,Paul,Koch,paul.koch@web.de,2023-02-17,Deutschland,Stuttgart,ACTIVE
+C0126,Gabriel,Van de Berg,gabriel.vandeberg@gmail.com,10.05.2020,Deutschland,Leipzig,Inactive
+C0128,Sem,Bauer,sem.bauer@mail.de,2023-06-03,Schweiz,Bern,ACTIVE
+C0129,Lea,Lefebvre,lea.lefebvre@gmx.net,2020-03-31,Deutschland,Leipzig,ACTIVE
+C0130,Julia,Koch,julia.koch@outlook.com,06/17/2020,Deutschland,Stuttgart,active
+C0131,Elias,Schwarz,elias.schwarz@gmx.net,2024-03-08,Österreich,Linz,ACTIVE
+C0132,David,Gruber,david.gruber@,01/29/2021,Deutschland,Frankfurt am Main,Active
+C0133,Noah,Zimmermann,noah.zimmermann@outlook.com,2024-03-30,Deutschland,Frankfurt am Main,Active
+C0134,David,Bernasconi,david.bernasconi@gmx.net,2024-07-26,Frankreich,Paris,ACTIVE
+C0135,Sanne,Meyer,sanne.meyer@gmx.net,12.02.2023,Schweiz,Genf,Active
+C0136,Gabriel,De Jong,gabriel.dejong@mail.de,2023-06-25,Niederlande,Rotterdam,ACTIVE
+C0138,Lotte,Müller,lotte.mueller@gmx.net,2020-11-20,Schweiz,Bern,ACTIVE
+C0139,Emilia,Wagner,emilia.wagner@example.com,2020-12-14,Österreich,Linz,active
+C0142,Antoine,Neumann,antoine.neumann@outlook.com,2020-09-02,Deutschland,Berlin,Active
+C0143,Sarah,Huber,sarah.huber@gmail.com,11.08.2023,Österreich,Linz,active
+C0144,Sarah,Fischer,sarah.fischer@mail.de,2022-09-17,Deutschland,Nürnberg,ACTIVE
+C0145,David,Wagner,david.wagner@gmx.net,11.09.2020,Frankreich,Paris,active
+C0149,Elena,Gruber,elena.gruber@gmail.com,2021-03-04,Niederlande,Den Haag,Active
+C0150,Marie,Koch,marie.koch@gmail.com,06/23/2020,Italien,Neapel,active
+C0151,Lea,Moser,lea.moser@gmx.net,05.07.2024,Österreich,Graz,Active
+C0153,David,Schwarz,david.schwarz@gmail.com,2022-08-30,Deutschland,Nürnberg,Active
+C0155,Noah,Hofer,noah.hofer@web.de,2023-08-25,Niederlande,Utrecht,active
+C0156,Felix,Van de Berg,felix.vandeberg@gmail.com,2020-11-22,Österreich,Innsbruck,active
+C0157,Lea,Moreau,lea.moreau@outlook.com,09/20/2024,Italien,Mailand,Active
+C0158,Lukas,Dubois,lukas.dubois@gmail.com,12/17/2024,Deutschland,Stuttgart,ACTIVE
+C0159,Chiara,Schmidt,chiara.schmidt@gmail.com,12.05.2020,Deutschland,Berlin,active
+C0160,Elena,Zimmermann,elena.zimmermann@outlook.com,2020-03-31,Frankreich,Lyon,ACTIVE
+C0161,Luca,Hofer,luca.hofer@outlook.com,01/26/2024,Österreich,Salzburg,active
+C0166,David,Van de Berg,david.vandeberg@mail.de,2024-11-04,Schweiz,Basel,ACTIVE
+C0167,Noah,Richter,noah.richter@gmail.com,2022-12-16,Deutschland,Dresden,Active
+C0168,Antoine,Fischer,antoine.fischer@mail.de,2024-03-30,Deutschland,München,ACTIVE
+C0169,Mia,Bianchi,mia.bianchi@gmx.net,2020-09-02,Deutschland,Nürnberg,ACTIVE
+C0172,Chiara,Meijer,chiara.meijer@example.com,2020-04-03,Deutschland,Köln,ACTIVE
+C0173,Mia,Fischer,mia.fischer@mail.de,2024-11-22,Italien,Mailand,ACTIVE
+C0174,David,Dubois,david.dubois@gmail.com,2024-04-12,Italien,Mailand,active
+C0175,Lukas,Becker,lukas.becker@outlook.com,12.11.2021,Deutschland,Stuttgart,ACTIVE
+C0178,Sanne,Schwarz,sanne.schwarz@web.de,03.02.2020,Deutschland,Hamburg,Active
+C0180,Daan,Hofer,daan.hofer@mail.de,02/09/2023,Deutschland,Berlin,inactive
+C0181,Jan,Koch,jan.koch@web.de,07/28/2024,Schweiz,Bern,Active
+C0183,Maximilian,Smit,maximilian.smit@web.de,02/02/2021,Deutschland,Leipzig,Active
+C0184,Louis,Meijer,louis.meijer@web.de,2021-08-30,Deutschland,Hamburg,ACTIVE
+C0186,Sanne,Jansen,sanne.jansen@mail.de,2024-05-31,Frankreich,Nice,active
+C0187,Paul,De Vries,paul.devries@gmx.net,2020-01-30,Schweiz,Genf,Active
+C0188,Camille,Bernasconi,camille.bernasconi@gmx.net,11/24/2020,Niederlande,Amsterdam,Active
+C0189,Paul,Hoffmann,paul.hoffmann@mail.de,01.11.2024,Deutschland,Köln,Inactive
+C0191,Elias,Hoffmann,elias.hoffmann@gmx.net,04.09.2024,Italien,Palermo,Active
+C0192,Marco,Meyer,marco.meyer@gmail.com,06/25/2022,Italien,Palermo,Active
+C0193,Noah,Fischer,noah.fischer@mail.de,2022-09-07,Österreich,Salzburg,active
+C0196,Antoine,Schneider,antoine.schneider@example.com,2023-07-28,Schweiz,Zürich,ACTIVE
+C0198,Manon,Schäfer,manon.schaefer@mail.de,01/29/2021,Deutschland,Dresden,Active
+C0199,Julia,Neumann,julia.neumann@mail.de,02/10/2020,Italien,Turin,ACTIVE
+C0200,Lea,Zimmermann,lea.zimmermann@mail.de,2024-12-07,Schweiz,Basel,Active
+C0202,Sophia,Bernasconi,sophia.bernasconi@gmx.net,2020-05-09,Schweiz,Lausanne,active
+C0203,Maximilian,Schwarz,maximilian.schwarz@web.de,23.01.2021,Deutschland,Hamburg,active
+C0204,Jan,Meyer,jan.meyer@mail.de,11.02.2021,Deutschland,Hamburg,Active
+C0209,Hannah,Schneider,hannah.schneider@example.com,03/24/2023,Schweiz,Zürich,Active
+C0210,Julia,Schneider,julia.schneider@web.de,2021-02-18,Frankreich,Paris,Active
+C0211,Elias,Neumann,elias.neumann@gmx.net,2023-11-20,Frankreich,Paris,Active
+C0213,Hannah,Hofer,hannah.hofer@gmx.net,07.12.2023,Deutschland,Dresden,Active
+C0215,Julia,Steiner,julia.steiner@example.com,2022-03-31,Frankreich,Lyon,Active
+C0216,Daan,Schneider,daan.schneider@example.com,07/28/2021,Niederlande,Den Haag,Active
+C0217,Felix,Koch,felix.koch@web.de,12/03/2024,Deutschland,Hamburg,active
+C0220,Julia,Müller,julia.mueller@mail.de,20.02.2024,Österreich,Innsbruck,active
+C0221,Louis,Lefebvre,louis.lefebvre@mail.de,01.12.2022,Deutschland,Berlin,Active
+C0224,David,Dubois,david.dubois@web.de,02/19/2023,Niederlande,Rotterdam,ACTIVE
+C0227,Felix,De Jong,felix.dejong@example.com,2021-04-12,Niederlande,Rotterdam,Active
+C0230,Daan,Fischer,daan.fischer@mail.de,20.06.2021,Frankreich,Nice,Active
+C0231,Elena,Koch,elena.koch@mail.de,2023-11-13,Schweiz,Basel,Active
+C0232,Luca,Bauer,luca.bauer@gmx.net,02/15/2023,Schweiz,Bern,Active
+C0235,Paul,Moreau,paul.moreau@outlook.com,04/09/2024,Schweiz,Basel,ACTIVE
+C0236,Louis,Bauer,louis.bauer@mail.de,03/21/2022,Deutschland,Düsseldorf,ACTIVE
+C0237,Marco,Zimmermann,marco.zimmermann@outlook.com,2023-01-20,Schweiz,Basel,ACTIVE
+C0238,David,Steiner,david.steiner@mail.de,2021-05-09,Schweiz,Bern,ACTIVE
+C0240,Alexander,Müller,alexander.mueller@gmx.net,2024-05-18,Deutschland,Hamburg,Active
+C0241,Lea,Esposito,lea.esposito@gmail.com,11.12.2020,Schweiz,Bern,active
+C0244,Marco,Richter,marco.richter@mail.de,2022-06-21,Deutschland,Düsseldorf,ACTIVE
+C0245,Manon,Zimmermann,manon.zimmermann@outlook.com,12.01.2023,Niederlande,Utrecht,active
+C0247,Felix,Smit,felix.smit@gmx.net,02/23/2023,Österreich,Linz,ACTIVE
+C0248,Alexander,Moser,alexander.moser@outlook.com,09/01/2021,Schweiz,Lausanne,active
+C0249,Sarah,Koch,sarah.koch@mail.de,2023-07-28,Frankreich,Paris,ACTIVE
+C0254,Alexander,Rossi,alexander.rossi@gmail.com,11/24/2020,Niederlande,Amsterdam,ACTIVE
+C0255,Marco,Gruber,marco.gruber@gmail.com,03/09/2024,Deutschland,Hamburg,active
+C0257,Elena,Rossi,elena.rossi@outlook.com,10.02.2020,Schweiz,Genf,inactive
+C0258,David,Dubois,david.dubois@gmail.com,01/01/2021,Deutschland,Nürnberg,ACTIVE
+C0259,Hannah,Schneider,hannah.schneider@gmx.net,09.11.2023,Deutschland,München,ACTIVE
+C0260,Elena,Zimmermann,elena.zimmermann@gmail.com,12/10/2022,Deutschland,Nürnberg,active
+C0261,Leon,Moser,leon.moser@outlook.com,10.12.2023,Österreich,Salzburg,active
+C0262,Marco,Esposito,marco.esposito@outlook.com,2022-06-25,Frankreich,Marseille,Active
+C0264,Jan,Van de Berg,jan.vandeberg@web.de,05/17/2023,Schweiz,Basel,ACTIVE
+C0265,Noah,Müller,noah.mueller@gmx.net,11.05.2024,Deutschland,Stuttgart,Active
+C0266,Giulia,Müller,giulia.mueller@gmx.net,2023-01-20,Schweiz,Genf,Inactive
+C0268,Sarah,Schmidt,sarah.schmidt@outlook.com,2022-02-14,Schweiz,Genf,active
+C0271,Paul,Bauer,paul.bauer@gmail.com,2022-10-31,Deutschland,Stuttgart,ACTIVE
+C0273,Sem,Fischer,sem.fischer@mail.de,11.08.2024,Österreich,Innsbruck,ACTIVE
+C0276,Camille,Hoffmann,camille.hoffmann@mail.de,06.10.2024,Niederlande,Eindhoven,Active
+C0277,Antoine,Lefebvre,antoine.lefebvre@gmx.net,07/26/2024,Schweiz,Lausanne,active
+C0279,Elena,Richter,elena.richter@gmx.net,05.08.2024,Niederlande,Amsterdam,active
+C0280,Finn,Müller,finn.mueller@gmx.net,08/17/2024,Österreich,Graz,Active
+C0282,Camille,Dubois,camille.dubois@outlook.com,12.01.2023,Frankreich,Lyon,ACTIVE
+C0283,Felix,Gruber,felix.gruber@web.de,2022-09-02,Österreich,Salzburg,ACTIVE
+C0284,Maximilian,Becker,maximilian.becker@outlook.com,2024-03-30,Deutschland,Nürnberg,ACTIVE
+C0287,David,Smit,david.smit@gmx.net,2022-08-30,Niederlande,Den Haag,ACTIVE
+C0289,Sanne,Bakker,sanne.bakker@web.de,2023-09-28,Niederlande,Den Haag,active
+C0290,Elias,Schäfer,elias.schaefer@mail.de,2022-02-14,Schweiz,Lausanne,Active
+C0292,Elena,Van de Berg,elena.vandeberg@web.de,2021-08-01,Frankreich,Lyon,active
+C0295,Noah,Fischer,noah.fischer@gmail.com,2023-10-18,Niederlande,Utrecht,ACTIVE
+C0297,Finn,De Jong,finn.dejong@gmx.net,2023-08-06,Niederlande,Rotterdam,ACTIVE
+C0301,Gabriel,Koch,gabriel.koch@outlook.com,11.05.2021,Schweiz,Genf,Active
+C0302,David,Hofer,david.hofer@outlook.com,2021-03-01,Österreich,Wien,ACTIVE
+C0303,Maximilian,Schmidt,maximilian.schmidt@gmail.com,13.06.2020,Italien,Neapel,ACTIVE
+C0304,David,Rossi,david.rossi@gmail.com,2022-01-26,Schweiz,Zürich,ACTIVE
+C0306,Maximilian,Wagner,maximilian.wagner@web.de,05/17/2023,Deutschland,Berlin,Active
+C0307,Lea,De Vries,lea.devries@gmail.com,2021-02-18,Italien,Neapel,Inactive
+C0309,Maximilian,Fischer,maximilian.fischer@gmx.net,12.03.2023,Österreich,Innsbruck,active
+C0310,Milan,Zimmermann,milan.zimmermann@outlook.com,11/17/2022,Schweiz,Genf,ACTIVE
+C0311,Elias,Hofer,elias.hofer@outlook.com,10.02.2023,Österreich,Graz,Inactive
+C0312,Alexander,Bernasconi,alexander.bernasconi@gmx.net,2021-01-08,Niederlande,Eindhoven,ACTIVE
+C0313,Lea,Fischer,lea.fischer@gmail.com,2024-03-20,Niederlande,Amsterdam,Inactive
+C0314,Sanne,Müller,sanne.mueller@gmx.net,2021-11-20,Italien,Palermo,ACTIVE
+C0319,Leon,Smit,leon.smit@gmx.net,05.07.2024,Deutschland,Stuttgart,ACTIVE
+C0320,Lukas,Schmidt,lukas.schmidt@gmail.com,06.10.2020,Schweiz,Lausanne,active
+C0321,Elias,Schröder,elias.schroeder@example.com,20.08.2021,Deutschland,Hamburg,active
+C0323,Finn,Koch,finn.koch@outlook.com,03/31/2020,Frankreich,Paris,Active
+C0324,Felix,Meyer,felix.meyer@gmx.net,2020-11-20,Österreich,Wien,Active
+C0325,Leon,Richter,leon.richter@gmx.net,2022-09-02,Deutschland,Hamburg,ACTIVE
+C0327,Luca,Müller,luca.mueller@outlook.com,08/30/2022,Deutschland,Berlin,ACTIVE
+C0331,Laura,Moreau,laura.moreau@outlook.com,2020-04-18,Frankreich,Toulouse,Active
+C0332,Laura,Richter,laura.richter@gmail.com,2021-11-06,Italien,Neapel,ACTIVE
+C0333,Sanne,De Jong,sanne.dejong@gmx.net,02/23/2022,Deutschland,Nürnberg,active
+C0334,Sanne,Zimmermann,sanne.zimmermann@gmail.com,09/02/2021,Deutschland,Stuttgart,ACTIVE
+C0335,David,Smit,david.smit@gmail.com,2023-01-20,Niederlande,Utrecht,Active
+C0336,Noah,Gruber,noah.gruber@example.com,2020-09-02,Deutschland,Nürnberg,active
+C0337,Sanne,Moser,sanne.moser@mail.de,05/17/2023,Schweiz,Basel,ACTIVE
+C0339,Sem,Schneider,sem.schneider@example.com,28.08.2023,Österreich,Linz,ACTIVE
+C0340,Lotte,Müller,lotte.mueller@gmail.com,2021-02-18,Niederlande,Amsterdam,Active
+C0342,Noah,Ferrari,noah.ferrari@web.de,08/30/2022,Deutschland,Köln,Active
+C0343,Elias,Zimmermann,elias.zimmermann@outlook.com,2022-10-09,Niederlande,Utrecht,ACTIVE
+C0345,Julia,Hofer,julia.hofer@gmx.net,2021-03-24,Deutschland,Berlin,ACTIVE
+C0346,Maximilian,Smit,maximilian.smit@example.com,03/31/2020,Niederlande,Rotterdam,Active
+C0351,Sophia,Jansen,sophia.jansen@mail.de,08.01.2023,Niederlande,Utrecht,active
+C0352,Milan,Richter,milan.richter@gmx.net,2024-03-08,Frankreich,Toulouse,ACTIVE
+C0353,Lotte,De Vries,lotte.devries@example.com,01/29/2021,Italien,Rom,ACTIVE
+C0354,Sarah,Müller,sarah.mueller@gmx.net,2023-01-20,Deutschland,Stuttgart,ACTIVE
+C0355,Gabriel,Müller,gabriel.mueller@outlook.com,2020-05-30,Niederlande,Den Haag,ACTIVE
+C0357,Leon,Smit,leon.smit@web.de,20.06.2020,Frankreich,Paris,active
+C0359,Gabriel,Jansen,gabriel.jansen@outlook.com,08/17/2020,Niederlande,Utrecht,active
+C0360,Milan,Zimmermann,milan.zimmermann@mail.de,01.10.2023,Niederlande,Eindhoven,ACTIVE
+C0361,Alexander,Richter,alexander.richter@gmail.com,02/09/2022,Deutschland,Leipzig,Active
+C0362,Marie,Koch,marie.koch@example.com,2020-05-18,Deutschland,Köln,ACTIVE
+C0363,Antoine,Bauer,antoine.bauer@mail.de,2020-05-09,Frankreich,Paris,ACTIVE
+C0364,Sophia,Hofer,sophia.hofer@outlook.com,11/04/2020,Österreich,Graz,Active
+C0365,Jan,Jansen,jan.jansen@example.com,2020-09-29,Deutschland,Leipzig,Active
+C0366,Laura,Koch,laura.koch@web.de,2020-02-14,Deutschland,Berlin,ACTIVE
+C0367,Sanne,Jansen,sanne.jansen@gmx.net,10/18/2023,Italien,Turin,ACTIVE
+C0368,Hannah,Schneider,hannah.schneider@gmail.com,20.08.2021,Deutschland,Stuttgart,active
+C0371,Milan,Fischer,milan.fischer@mail.de,2022-10-31,Schweiz,Basel,ACTIVE
+C0372,David,Wagner,david.wagner@example.com,12/17/2024,Österreich,Linz,ACTIVE
+C0373,Chiara,Meijer,chiara.meijer@outlook.com,05/17/2023,Niederlande,Rotterdam,ACTIVE
+C0374,Emma,Bauer,emma.bauer@mail.de,20.02.2024,Schweiz,Zürich,ACTIVE
+C0376,Daan,Schneider,daan.schneider@web.de,2022-09-07,Schweiz,Bern,ACTIVE
+C0377,Lea,Meijer,lea.meijer@web.de,2021-03-31,Niederlande,Utrecht,Active
+C0378,Julia,Müller,julia.mueller@gmail.com,11/20/2021,Österreich,Salzburg,active
+C0380,Sanne,Zimmermann,sanne.zimmermann@outlook.com,05/19/2022,Schweiz,Bern,ACTIVE
+C0381,Lotte,Wagner,lotte.wagner@web.de,05.08.2021,Schweiz,Genf,Active
+C0382,Louis,Meijer,louis.meijer@web.de,2023-01-26,Niederlande,Utrecht,Active
+C0384,Alexander,Koch,alexander.koch@example.com,10.02.2023,Schweiz,Genf,active
+C0385,Sanne,Meijer,sanne.meijer@outlook.com,18.06.2023,Niederlande,Rotterdam,Active
+C0386,Laura,Moser,laura.moser@outlook.com,12.02.2024,Schweiz,Lausanne,active
+C0391,Elias,Bauer,elias.bauer@gmail.com,10.05.2020,Deutschland,Hamburg,Active
+C0394,Sem,Schulz,sem.schulz@gmx.net,2022-03-24,Frankreich,Toulouse,Active
+C0395,Leon,Meijer,leon.meijer@gmx.net,2024-03-08,Niederlande,Eindhoven,ACTIVE
+C0396,Antoine,Bauer,antoine.bauer@gmail.com,2022-10-31,Schweiz,Bern,active
+C0397,Luca,Schäfer,luca.schaefer@outlook.com,08/17/2020,Schweiz,Basel,ACTIVE
+C0398,Julia,Bernasconi,julia.bernasconi@gmx.net,28.08.2023,Italien,Palermo,ACTIVE
+C0400,Elena,Koch,elena.koch@web.de,05/17/2023,Italien,Neapel,ACTIVE
+C0401,Mia,Hoffmann,mia.hoffmann@mail.de,2021-02-09,Schweiz,Zürich,ACTIVE
+C0402,Elena,Gruber,elena.gruber@gmx.net,2022-08-30,Deutschland,Stuttgart,ACTIVE
+C0403,Laura,Dubois,laura.dubois@mail.de,2023-01-26,Österreich,Graz,Inactive
+C0407,Elias,Koch,elias.koch@mail.de,2020-03-31,Deutschland,Stuttgart,ACTIVE
+C0412,Elias,Schmidt,elias.schmidt@outlook.com,2020-02-14,Deutschland,Hamburg,Active
+C0414,Lukas,Rossi,lukas.rossi@example.com,2022-05-30,Italien,Mailand,ACTIVE
+C0415,Milan,Schröder,milan.schroeder@example.com,2020-05-09,Deutschland,Leipzig,Active
+C0416,Mia,Schmidt,mia.schmidt@mail.de,2021-12-07,Schweiz,Bern,ACTIVE
+C0419,Sarah,Becker,sarah.becker@outlook.com,2020-05-09,Österreich,Linz,ACTIVE
+C0422,Lukas,Schneider,lukas.schneider@mail.de,01/29/2021,Deutschland,Nürnberg,ACTIVE
+C0423,Sanne,Schwarz,sanne.schwarz@outlook.com,02/09/2023,Österreich,Wien,active
+C0426,Elena,Dubois,elena.dubois@gmx.net,10/18/2023,Deutschland,Nürnberg,Active
+C0427,Marco,Richter,marco.richter@gmail.com,08.01.2023,Deutschland,Dresden,active
+C0428,Gabriel,Becker,gabriel.becker@outlook.com,07.12.2023,Österreich,Linz,Active
+C0430,Chiara,Koch,chiara.koch@web.de,2023-11-20,Schweiz,Basel,ACTIVE
+C0431,Hannah,Lefebvre,hannah.lefebvre@gmx.net,12.02.2023,Schweiz,Genf,Active
+C0432,Laura,Fischer,laura.fischer@mail.de,2020-11-04,Deutschland,Hamburg,ACTIVE
+C0433,Gabriel,De Jong,gabriel.dejong@gmx.net,05/17/2022,Niederlande,Den Haag,active
+C0434,Julia,Jansen,julia.jansen@example.com,11.08.2023,Italien,Neapel,ACTIVE
+C0435,Leon,Meijer,leon.meijer@mail.de,2020-09-02,Schweiz,Genf,Active
+C0444,Felix,Moreau,felix.moreau@outlook.com,2024-03-30,Italien,Palermo,Active
+C0446,Marco,Schäfer,marco.schaefer@mail.de,2020-12-14,Schweiz,Bern,Active
+C0447,Paul,Meyer,paul.meyer@mail.de,18.06.2022,Deutschland,Leipzig,ACTIVE
+C0450,Paul,Wagner,paul.wagner@mail.de,11.12.2020,Schweiz,Zürich,ACTIVE
+C0451,Sanne,De Jong,sanne.dejong@example.com,05/30/2020,Italien,Rom,ACTIVE
+C0453,Manon,Koch,manon.koch@mail.de,2023-01-20,Schweiz,Lausanne,Active
+C0454,Felix,Hoffmann,felix.hoffmann@gmx.net,11.05.2021,Deutschland,Hamburg,ACTIVE
+C0455,Elena,Moreau,elena.moreau@example.com,06/25/2022,Deutschland,Berlin,Active
+C0457,David,Gruber,david.gruber@gmail.com,05.07.2024,Österreich,Wien,Active
+C0458,Lea,Bernasconi,lea.bernasconi@gmx.net,2024-03-20,Deutschland,Berlin,Active
+C0459,Jan,Bernasconi,jan.bernasconi@gmail.com,2020-03-21,Deutschland,Frankfurt am Main,ACTIVE
+C0460,Sophie,Schmidt,sophie.schmidt@gmail.com,12/16/2023,Deutschland,Berlin,Active
+C0461,Louis,Schröder,louis.schroeder@example.com,2020-02-14,Italien,Rom,ACTIVE
+C0464,Paul,Jansen,paul.jansen@example.com,08/30/2022,Deutschland,Hamburg,active
+C0465,David,Weber,david.weber@web.de,08.01.2023,Deutschland,Köln,ACTIVE
+C0466,Manon,Schäfer,manon.schaefer@gmail.com,2021-08-31,Schweiz,Genf,Active
+C0467,Lotte,Moser,lotte.moser@outlook.com,04/03/2020,Österreich,Graz,Active
+C0468,David,Dubois,david.dubois@example.com,08/30/2022,Schweiz,Genf,Active
+C0469,Maximilian,Schmidt,maximilian.schmidt@gmail.com,01/26/2024,Schweiz,Zürich,Active
+C0470,David,Koch,david.koch@gmx.net,09/01/2021,Deutschland,Berlin,Active
+C0471,Camille,Hoffmann,camille.hoffmann@mail.de,05.08.2024,Italien,Neapel,ACTIVE
+C0474,Paul,Koch,paul.koch@outlook.com,02/09/2022,Schweiz,Bern,ACTIVE
+C0477,Sanne,Jansen,sanne.jansen@mail.de,11.08.2023,Deutschland,Frankfurt am Main,Active
+C0478,Maximilian,Zimmermann,maximilian.zimmermann@outlook.com,2020-02-14,Schweiz,Genf,Active
+C0481,Alexander,Zimmermann,alexander.zimmermann@mail.de,2020-01-20,Österreich,Graz,Active
+C0482,Alexander,Hoffmann,alexander.hoffmann@gmx.net,05/18/2021,Deutschland,Frankfurt am Main,ACTIVE
+C0483,Leon,Hoffmann,leon.hoffmann@gmail.com,2020-05-30,Deutschland,Stuttgart,ACTIVE
+C0488,Sanne,Moser,sanne.moser@gmx.net,2022-09-02,Schweiz,Lausanne,Active
+C0489,Daan,Schneider,daan.schneider@example.com,2023-01-20,Frankreich,Paris,ACTIVE
+C0490,Elena,Koch,elena.koch@gmail.com,2022-03-31,Deutschland,Hamburg,Active
+C0491,Felix,Zimmermann,felix.zimmermann@gmx.net,20.06.2020,Deutschland,Düsseldorf,ACTIVE
+C0492,Nico,Schmidt,nico.schmidt@gmail.com,20.08.2021,Niederlande,Rotterdam,ACTIVE
+C0494,Marco,Zimmermann,marco.zimmermann@mail.de,2020-03-21,Deutschland,Dresden,ACTIVE
+C0495,Jan,Bernasconi,jan.bernasconi@gmx.net,2020-09-29,Österreich,Wien,ACTIVE
+C0496,Lukas,Schwarz,lukas.schwarz@gmail.com,2021-08-30,Deutschland,Leipzig,active
+C0497,Maximilian,Richter,maximilian.richter@outlook.com,20.06.2021,Niederlande,Rotterdam,ACTIVE
+C0498,Maximilian,Ferrari,maximilian.ferrari@example.com,2021-01-08,Österreich,Graz,Active
+C0499,Lukas,Schmidt,lukas.schmidt@mail.de,2020-01-30,Schweiz,Basel,ACTIVE
+C0500,Noah,Wagner,noah.wagner@gmx.net,2022-10-31,Schweiz,Genf,Inactive
+C0502,David,Hofer,david.hofer@outlook.com,2020-02-14,Schweiz,Zürich,ACTIVE
+C0505,Sarah,Meyer,sarah.meyer@example.com,20.06.2021,Schweiz,Lausanne,Active
+C0506,Daan,Moreau,daan.moreau@outlook.com,06/17/2020,Deutschland,Frankfurt am Main,active
+C0507,Paul,Schneider,paul.schneider@web.de,05.08.2021,Schweiz,Lausanne,Active
+C0509,Hannah,Weber,hannah.weber@gmail.com,2023-08-06,Frankreich,Toulouse,ACTIVE
+C0512,Antoine,Meijer,antoine.meijer@gmx.net,20.02.2024,Österreich,Lines,ACTIVE
+C0514,Felix,Müller,felix.mueller@gmx.net,2022-10-31,Schweiz,Genf,active
+C0515,Paul,De Jong,paul.dejong@gmx.net,05/17/2023,Niederlande,Amsterdam,ACTIVE
+C0516,Matteo,Müller,matteo.mueller@gmail.com,2022-09-17,Deutschland,Stuttgart,ACTIVE
+C0518,Louis,Schmidt,louis.schmidt@web.de,2022-08-04,Schweiz,Lausanne,ACTIVE
+C0520,Sophia,Koch,sophia.koch@mail.de,11/24/2020,Frankreich,Paris,active
+C0521,Finn,Schmidt,finn.schmidt@gmail.com,02/23/2023,Österreich,Graz,ACTIVE
+C0522,Sophia,Hofer,sophia.hofer@outlook.com,2023-11-20,Deutschland,Hamburg,ACTIVE
+C0523,Sarah,Gruber,sarah.gruber@gmx.net,2022-01-26,Deutschland,Frankfurt am Main,Active
+C0525,Laura,Wagner,laura.wagner@gmx.net,2024-03-30,Deutschland,Nürnberg,active
+C0526,Luca,De Jong,luca.dejong@web.de,2021-03-24,Niederlande,Eindhoven,ACTIVE
+C0528,Felix,Koch,felix.koch@web.de,2022-08-30,Deutschland,Frankfurt am Main,ACTIVE
+C0529,Lukas,Schmidt,lukas.schmidt@mail.de,11/17/2022,Deutschland,Berlin,ACTIVE
+C0537,Marie,Koch,marie.koch@outlook.com,2022-10-09,Frankreich,Nice,Active
+C0539,Gabriel,Dubois,gabriel.dubois@mail.de,08/30/2022,Schweiz,Bern,ACTIVE
+C0540,Mia,Meyer,mia.meyer@gmx.net,2020-03-12,Italien,Neapel,ACTIVE
+C0541,Paul,Weber,paul.weber@mail.de,2020-11-04,Schweiz,Bern,active
+C0543,Lotte,Müller,lotte.mueller@mail.de,2024-07-28,Frankreich,Lyon,ACTIVE
+C0545,Louis,Rossi,louis.rossi@outlook.com,05.07.2024,Italien,Turin,ACTIVE
+C0547,Sarah,Steiner,sarah.steiner@mail.de,07/28/2024,Österreich,Graz,ACTIVE
+C0549,David,Meyer,david.meyer@gmx.net,11.08.2023,Niederlande,Utrecht,active
+C0550,Antoine,Schneider,antoine.schneider@example.com,2020-02-14,Niederlande,Eindhoven,ACTIVE
+C0553,Elias,Smit,elias.smit@gmx.net,05/17/2023,Österreich,Linz,ACTIVE
+C0554,Hannah,Weber,hannah.weber@example.com,2020-11-04,Schweiz,Basel,active
+C0555,Sanne,Jansen,sanne.jansen@outlook.com,2021-02-09,Niederlande,Utrecht,Active
+C0556,Matteo,Müller,matteo.muellerweb.de,01.10.2023,Deutschland,Berlin,ACTIVE
+C0559,Alexander,Schneider,alexander.schneider@gmail.com,11.09.2020,Deutschland,Stuttgart,active
+C0560,Mia,Moser,mia.moser@mail.de,08.01.2023,Italien,Mailand,ACTIVE
+C0562,Nico,Zimmermann,nico.zimmermann@outlook.com,2024-03-30,Deutschland,Hamburg,ACTIVE
+C0563,Elias,Bauer,elias.bauer@outlook.com,11.09.2020,Schweiz,Basel,Active
+C0565,Luca,De Jong,luca.dejong@outlook.com,2023-01-07,Niederlande,Rotterdam,ACTIVE
+C0566,Elias,Meyer,elias.meyer@example.com,2024-12-07,Österreich,Salzburg,ACTIVE
+C0567,Louis,Meijer,louis.meijer@web.de,08.01.2023,Schweiz,Bern,active
+C0568,Sophie,Wagner,sophie.wagner@gmx.net,12.02.2023,Deutschland,Frankfurt am Main,ACTIVE
+C0569,Sarah,Becker,sarah.becker@example.com,12/10/2022,Deutschland,München,active
+C0572,Hannah,Moser,hannah.moser@mail.de,2020-10-23,Schweiz,Bern,ACTIVE
+C0573,Felix,Moreau,felix.moreau@outlook.com,01/26/2024,Österreich,Graz,Active
+C0575,Alexander,Meyer,alexander.meyer@outlook.com,11.09.2020,Deutschland,Berlin,ACTIVE
+C0577,Alexander,Wagner,alexander.wagner@mail.de,07/28/2024,Deutschland,Stuttgart,ACTIVE
+C0578,Lukas,Schmidt,lukas.schmidt@gmail.com,2022-09-28,Deutschland,Berlin,active
+C0579,Jan,Wagner,jan.wagner@gmail.com,2021-08-30,Schweiz,Genf,Active
+C0580,Alexander,Huber,alexander.huber@web.de,2020-03-12,Schweiz,Bern,Active
+C0582,Luca,Bauer,luca.bauer@gmx.net,2022-02-14,Schweiz,Genf,ACTIVE
+C0583,Elias,Schäfer,elias.schaefer@outlook.com,20.08.2021,Deutschland,Stuttgart,ACTIVE
+C0584,Sanne,Gruber,sanne.gruber@gmx.net,2020-11-22,Deutschland,Köln,ACTIVE
+C0585,Marie,Hofer,marie.hofer@gmail.com,2022-09-02,Österreich,Linz,ACTIVE
+C0587,Alexander,Fischer,alexander.fischer@mail.de,2023-02-18,Deutschland,Dresden,ACTIVE
+C0588,Hannah,Hoffmann,hannah.hoffmann@gmx.net,12/03/2024,Italien,Palermo,ACTIVE
+C0589,Daan,Schneider,daan.schneider@example.com,2021-01-16,Italien,Rom,ACTIVE
+C0593,David,Dubois,david.dubois@mail.de,01.10.2023,Deutschland,Dresden,Active
+C0595,Daan,Jansen,daan.jansen@outlook.com,05/18/2021,Niederlande,Eindhoven,ACTIVE
+C0597,Leon,Smit,leon.smit@gmx.net,08/17/2020,Niederlande,Eindhoven,active
+C0598,Gabriel,Jansen,gabriel.jansen@mail.de,07/26/2024,Schweiz,Zürich,ACTIVE
+C0599,Gabriel,Hofer,gabriel.hofer@gmx.net,03/24/2023,Österreich,Graz,Active
+C0008,Anna,Moser,anna.moser@web.de,07/24/2021,Schweiz,Lausanne,Active
+C0181,Jan,Koch,jan.koch@web.de,07/28/2024,Schweiz,Bern,Active
