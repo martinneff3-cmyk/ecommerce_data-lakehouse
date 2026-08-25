@@ -1,0 +1,1293 @@
+{
+  "datasets": [
+    {
+      "name": "2da7b009",
+      "displayName": "conversion_funnel",
+      "config": {
+        "version": "1.1",
+        "source": "ecommerce_catalog.gold.conversion_funnel",
+        "dimensions": [
+          {
+            "expr": "source.*"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "9e882834",
+      "displayName": "customer_metrics",
+      "config": {
+        "version": "1.1",
+        "source": "ecommerce_catalog.gold.customer_metrics",
+        "dimensions": [
+          {
+            "expr": "source.*"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ccee2a70",
+      "displayName": "daily_sales",
+      "config": {
+        "version": "1.1",
+        "source": "ecommerce_catalog.gold.daily_sales",
+        "dimensions": [
+          {
+            "expr": "source.*"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dbef53f2",
+      "displayName": "product_performance",
+      "config": {
+        "version": "1.1",
+        "source": "ecommerce_catalog.gold.product_performance",
+        "dimensions": [
+          {
+            "expr": "source.*"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "61228724",
+      "displayName": "top_ten_products",
+      "queryLines": [
+        "SELECT \r\n",
+        "    product_id,\r\n",
+        "    ROUND(SUM(revenue), 2) AS total_product_revenue\r\n",
+        "FROM product_performance\r\n",
+        "GROUP BY product_id\r\n",
+        "ORDER BY total_product_revenue DESC\r\n",
+        "LIMIT 10;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "8a6098a5",
+      "displayName": "products_sold_top",
+      "queryLines": [
+        "SELECT\r\n",
+        "    product_id,\r\n",
+        "    SUM(units_sold)\r\n",
+        "    AS total_sold\r\n",
+        "FROM product_performance\r\n",
+        "GROUP BY product_id\r\n",
+        "ORDER BY total_sold DESC\r\n",
+        "LIMIT 10\r\n",
+        "\r\n",
+        "    "
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "419727cf",
+      "displayName": "top_customers_by_revenue",
+      "queryLines": [
+        "SELECT \r\n",
+        "    customer_id,\r\n",
+        "    ROUND(SUM(total_revenue), 2) AS total_revenue\r\n",
+        "FROM customer_metrics\r\n",
+        "GROUP BY customer_id\r\n",
+        "ORDER BY total_revenue DESC\r\n",
+        "LIMIT 10;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "337bfe7d",
+      "displayName": "revenue_by_country",
+      "queryLines": [
+        "SELECT\r\n",
+        "country,\r\n",
+        "ROUND(SUM(total_revenue), 2) AS total_revenue\r\n",
+        "FROM customer_metrics\r\n",
+        "GROUP BY country\r\n",
+        "ORDER BY total_revenue DESC;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "9ce0ce63",
+      "displayName": "number_of_customers",
+      "queryLines": [
+        "SELECT\r\n",
+        "COUNT(DISTINCT customer_id) AS total_customers\r\n",
+        "FROM customer_metrics;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "0ec55342",
+      "displayName": "customers_total_revenue",
+      "queryLines": [
+        "SELECT\r\n",
+        "ROUND(SUM(total_revenue), 2) AS total_revenue\r\n",
+        "FROM customer_metrics;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "3201b26e",
+      "displayName": "product_cart_conversion",
+      "queryLines": [
+        "SELECT\r\n",
+        "CONCAT(conversion_from_previous_step_pct,\" %\") AS cart_conversion_rate\r\n",
+        "FROM conversion_funnel\r\n",
+        "WHERE funnel_step_order = 2;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "2056a53c",
+      "displayName": "cart_checkout_conversion",
+      "queryLines": [
+        "SELECT\r\n",
+        "CONCAT(conversion_from_previous_step_pct, \" %\") AS checkout_conversion\r\n",
+        "FROM conversion_funnel\r\n",
+        "WHERE funnel_step_order = 3;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "58173f17",
+      "displayName": "checkout_purchase",
+      "queryLines": [
+        "SELECT\r\n",
+        "CONCAT(conversion_from_previous_step_pct, \" %\") AS checkout_purchase\r\n",
+        "FROM conversion_funnel\r\n",
+        "WHERE funnel_step_order = 4;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "c4f586c8",
+      "displayName": "conv_funnel_1",
+      "queryLines": [
+        "SELECT\r\n",
+        "CONCAT(funnel_step_order, \". \", funnel_step) AS funnel_step,\r\n",
+        "session_count\r\n",
+        "FROM conversion_funnel\r\n",
+        "ORDER BY funnel_step_order;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    },
+    {
+      "name": "d167d113",
+      "displayName": "product_purchase",
+      "queryLines": [
+        "SELECT\r\n",
+        "CONCAT(overall_conversion_rate_pct, \" %\") AS product_purchase\r\n",
+        "FROM conversion_funnel\r\n",
+        "WHERE funnel_step_order = 4;"
+      ],
+      "catalog": "ecommerce_catalog",
+      "schema": "gold"
+    }
+  ],
+  "pages": [
+    {
+      "name": "bc7b5674",
+      "displayName": "Dashboard_Ecom",
+      "layout": [
+        {
+          "widget": {
+            "name": "t",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ccee2a70",
+                  "fields": [
+                    {
+                      "name": "sum(revenue)",
+                      "expression": "SUM(`revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": false,
+                "showDescription": false,
+                "title": "Total Revenue"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(revenue)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            },
+            "specExtensions": {
+              "widgetBackgroundColor": {
+                "light": "#FFFFFF"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "t1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ccee2a70",
+                  "fields": [
+                    {
+                      "name": "sum(order_count)",
+                      "expression": "SUM(`order_count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": false,
+                "title": "Total Orders"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(order_count)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 4,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "total",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ccee2a70",
+                  "fields": [
+                    {
+                      "name": "sum(units_sold)",
+                      "expression": "SUM(`units_sold`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": false,
+                "title": "Total Units Sold"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(units_sold)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 4,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "da937cb6",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "dbef53f2",
+                  "fields": [
+                    {
+                      "name": "sum(revenue)",
+                      "expression": "SUM(`revenue`)"
+                    },
+                    {
+                      "name": "category",
+                      "expression": "`category`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 16,
+            "width": 4,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "e86cff81",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:24px\">Total Revenue</span> (€)"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "3a045cb6",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 24px;\">Total Orders</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 3,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "92ecd27b",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 24px;\">Units Sold</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 3,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "b37fdd6f",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "61228724",
+                  "fields": [
+                    {
+                      "name": "product_id",
+                      "expression": "`product_id`"
+                    },
+                    {
+                      "name": "sum(total_product_revenue)",
+                      "expression": "SUM(`total_product_revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "product_id",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_product_revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 16,
+            "width": 4,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "fa7b81bd",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:24px\">Top Products Revenue</span> (€)"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 15,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "8c2a0423",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:24px\">Revenue by Category</span> (€)"
+              ]
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 15,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "8de867b4",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 24px;\">**Top-Selling Products**</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 15,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "c7842b80",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "8a6098a5",
+                  "fields": [
+                    {
+                      "name": "product_id",
+                      "expression": "`product_id`"
+                    },
+                    {
+                      "name": "sum(total_sold)",
+                      "expression": "SUM(`total_sold`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "product_id",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_sold)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 16,
+            "width": 4,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "8b51134e",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ccee2a70",
+                  "fields": [
+                    {
+                      "name": "monthly(sales_date)",
+                      "expression": "DATE_TRUNC(\"MONTH\", `sales_date`)"
+                    },
+                    {
+                      "name": "sum(revenue)",
+                      "expression": "SUM(`revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "monthly(sales_date)",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 9,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "ec8bde20",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:48px;line-height:1.5\">Revenue over Time (€)</span> "
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 7,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "d6b81a23",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:24px\">Top Customers by Revenue</span> (€)"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 29,
+            "width": 6,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "57a67490",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "419727cf",
+                  "fields": [
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    },
+                    {
+                      "name": "customer_id",
+                      "expression": "`customer_id`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(total_revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "customer_id",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 30,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "264127a9",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:24px\">Revenue by Country</span> (€)"
+              ]
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 29,
+            "width": 6,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "95b3c047",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "337bfe7d",
+                  "fields": [
+                    {
+                      "name": "sum(total_revenue)",
+                      "expression": "SUM(`total_revenue`)"
+                    },
+                    {
+                      "name": "country",
+                      "expression": "`country`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(total_revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "country",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 30,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "21a38ae1",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 48px;line-height: 1.5;\">Customer Analytics</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 22,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "0eb6bf4a",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:24px\">Identified Customers</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 24,
+            "width": 6,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "ecabcb6a",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:24px\">Revenue from Identified Customers</span> (€)"
+              ]
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 24,
+            "width": 6,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "3fecf8f6",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9ce0ce63",
+                  "fields": [
+                    {
+                      "name": "sum(total_customers)",
+                      "expression": "SUM(`total_customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(total_customers)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 25,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "5aff7a3e",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "0ec55342",
+                  "fields": [
+                    {
+                      "name": "total_revenue",
+                      "expression": "`total_revenue`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "total_revenue"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 25,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "cf3cfcb7",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 24px;\">Product -> Chart Conversion</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 38,
+            "width": 3,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "ace48ec7",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 24px;\">Chart -> Checkout Conversion</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 38,
+            "width": 3,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "9c0fbee1",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 24px;\">Checkout -> Purchase</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 38,
+            "width": 3,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "a882dd7d",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "3201b26e",
+                  "fields": [
+                    {
+                      "name": "cart_conversion_rate",
+                      "expression": "`cart_conversion_rate`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "cart_conversion_rate"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 40,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "c52e7dda",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2056a53c",
+                  "fields": [
+                    {
+                      "name": "checkout_conversion",
+                      "expression": "`checkout_conversion`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "checkout_conversion"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 40,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "8d1ae9e8",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "58173f17",
+                  "fields": [
+                    {
+                      "name": "checkout_purchase",
+                      "expression": "`checkout_purchase`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "checkout_purchase"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 40,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "ba6c77b9",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 36px;line-height: 1.5;\">Conversion Funnel</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 43,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "d8543d76",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# <span style=\"font-size: 48px;line-height: 1.5;\">Ecommerce Performance Dashboard</span>\n",
+                "\n",
+                "## Overview of sales, product, customer and conversion performance"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "42903eba",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c4f586c8",
+                  "fields": [
+                    {
+                      "name": "sum(session_count)",
+                      "expression": "SUM(`session_count`)"
+                    },
+                    {
+                      "name": "funnel_step",
+                      "expression": "`funnel_step`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "funnel",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(session_count)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "funnel_step",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 45,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "fa65a1fe",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size: 48px;line-height: 1.5;\">Web Analytics</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 36,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "b1113dd1",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"font-size:24px\">Product -> Purchase</span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 38,
+            "width": 3,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "f378ca4e",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "d167d113",
+                  "fields": [
+                    {
+                      "name": "product_purchase",
+                      "expression": "`product_purchase`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "product_purchase"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 40,
+            "width": 3,
+            "height": 3
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
