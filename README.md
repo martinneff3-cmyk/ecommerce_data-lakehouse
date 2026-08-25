@@ -99,18 +99,24 @@ datasets to validate aggregation accuracy.
 
 ## Dashboard
 
-The Databricks dashboard provides an overview of:
+The final Databricks dashboard demonstrates how the curated Gold Layer
+datasets can be consumed for business analytics and reporting.
 
-- Total Revenue
-- Total Orders
-- Units Sold
-- Revenue Over Time
-- Top Products by Revenue
-- Top-Selling Products
-- Revenue by Category
-- Customer Analytics
-- Revenue by Country
-- Conversion Funnel
+### Sales Overview
+
+![Sales Overview](docs/images/dashboard_screenshot_1.png)
+
+### Product Performance
+
+![Product Performance](docs/images/dashboard_screenshot_2.png)
+
+### Customer Analytics
+
+![Customer Analytics](docs/images/dashboard_screenshot_3.png)
+
+### Web Analytics
+
+![Web Analytics](docs/images/dashboard_screenshot_4.png)
 
 ## Technologies
 
