@@ -151,7 +151,7 @@
       "displayName": "number_of_customers",
       "queryLines": [
         "SELECT\r\n",
-        "COUNT(DISTINCT customer_id) AS total_customers\r\n",
+        "  COUNT(DISTINCT customer_id) AS total_customers\r\n",
         "FROM customer_metrics;"
       ],
       "catalog": "ecommerce_catalog",
@@ -162,7 +162,7 @@
       "displayName": "customers_total_revenue",
       "queryLines": [
         "SELECT\r\n",
-        "ROUND(SUM(total_revenue), 2) AS total_revenue\r\n",
+        "  ROUND(SUM(total_revenue), 2) AS total_revenue\r\n",
         "FROM customer_metrics;"
       ],
       "catalog": "ecommerce_catalog",
@@ -173,7 +173,7 @@
       "displayName": "product_cart_conversion",
       "queryLines": [
         "SELECT\r\n",
-        "CONCAT(conversion_from_previous_step_pct,\" %\") AS cart_conversion_rate\r\n",
+        "  CONCAT(conversion_from_previous_step_pct,\" %\") AS cart_conversion_rate\r\n",
         "FROM conversion_funnel\r\n",
         "WHERE funnel_step_order = 2;"
       ],
